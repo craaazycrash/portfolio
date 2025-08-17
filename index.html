@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-</head>
+    </head>
 <body>
     <nav>
         <div class="container">
             <div class="heading">
-                <h3>ASHIK DEEN N</h3>
+                <a href="#home"><h3>ASHIK DEEN N</h3></a>
             </div>
             <div class="navigation">
                 <a href="#about"><h3>ABOUT</h3></a>
@@ -18,23 +19,42 @@
                 <a href="#skills"><h3>SKILLS</h3></a>
                 <a href="#works"><h3>WORKS</h3></a>
                 <a href="#contact"><h3>CONTACT</h3></a>
+                <a href="FULL STACK (1).pdf"><button>Download CV</button></a>
             </div>
         </div>
     </nav>
     <main>
-        <section class="herosection" id="about">
-            <div class="leftimg">
-                <img src="Group 115.png" alt="">
+        <section class="herosection" id="home">
+            <div class="leftimg" data-aos="fade-right">
+                <img src="developer.jpg" alt="">
             </div>
             <div class="rightcontent">
                 <h2>Hello! I am Ashik Deen N</h2>
                 <h1>FULL STACK DEVELOPER</h1>
-                <p>Creative front-end developer skilled in Figma, HTML, and CSS, now expanding into full-stack development to build complete, scalable web applications.</p>
-                <div class="buttons">
-                    <button>Hire me</button>
-                    <button>Download CV</button>
+                <p>Creative and skilled web developer with experience in designing visually appealing, user-friendly websites that combine functionality with aesthetic excellence.
+                </p>
+                <div class="logos">
+                    <img src="logos.png" alt="">
                 </div>
             </div>
+        </section>
+        <section class="about" id="about">
+             <div class="heading">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="underline">       
+            </div>
+            <div class="aboutme" >
+                
+                <img src="profile.jpg" alt=""   data-aos="zoom-in-right" data-aos-duration="3000">
+                <div class="contentmain"   data-aos="zoom-in-left" data-aos-duration="3000">
+                    <h2>I am Ashik Deen N</h2>
+                    <p>I’m a Full-Stack Developer proficient in HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, WordPress, MongoDB, Figma, and responsive design frameworks. I specialize in crafting visually appealing and highly functional user interfaces. Feel free to explore my portfolio to see my work, and if you have a project or idea in mind, I’m always open to new opportunities and collaborations.</p>
+                    <a href="#contact"><button class="hire">Hire me</button></a>
+
+                </div>
+            </div>
+
         </section>
         <section class="education" id="education">
             <div class="heading">
@@ -42,7 +62,9 @@
             </div>
             <div class="underline">       
             </div>
-            <div class="educontents">
+            <div class="educontents"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                 <div class="right">
                     <div class="right1">
                         <p class="class">CLASS X [CBSE]</p>
@@ -55,7 +77,7 @@
                         <p>2020 - 2021</p>                    
                     </div>
                     <div class="right1">
-                        <p class="class">UNDER GRADUATION IN 
+                        <p class="class">
                     B.E.COMPUTER SCIENCE AND ENGINEERING</p>
                         <h3>KCG COLLEGE OF TECHNOLOGY, Karapakkam, Chennai - 600097.</h3>
                         <p>2021 - 2025</p>                    
@@ -71,25 +93,25 @@
             </div> 
             <div class="cards">
                 <div class="row1">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="600">
                         <img src="html.png" alt="">
                         <p>HTML</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1000">
                         <img src="css.png" alt="">
                         <p>CSS</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1400">
                         <img src="javascript.png" alt="">
                         <p>Javascript</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1800">
                         <div class="bootstrap">
                             <img src="bootstarp.png" alt="">
                         </div>
                         <p>Bootstrap</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="2200">
                         <div class="ajax">
                             <img src="ajax.png" alt="">
                         </div>
@@ -97,46 +119,46 @@
                     </div>
                 </div>
                 <div class="row1">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="600">
                         <img src="jquery.png" alt="">
                         <p>Jquery</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1000">
                         <img src="react.png" alt="">
                         <p>ReactJS</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1400">
                         <img src="nodejs.png" alt="">
                         <p>NodeJS</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1800">
                         <img src="Express.png" alt="">
                         <p>ExpressJS</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="2200">
                         <img src="python.png" alt="">
                         <p>Python</p>
                     </div>
                 </div>
                 <div class="row1">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="600">
                         <img src="mongodb.png" alt="">
                         <p>MongoDB</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1000">
                         <img src="sql.png" alt="">
                         <p>MySQL</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1400">
                        <div class="figma">              <img src="figma.png" alt="">
                         </div>
                         <p>Figma</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1800">
                         <img src="photoshop.png" alt="">
                         <p>Photoshop</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="2200">
                         <img src="wordpress.png" alt="">
                         <p>Wordpress</p>
                     </div>
@@ -150,7 +172,7 @@
             <div class="underline">       
             </div>
             <div class="works">
-                <div class="work1">
+                <div class="work1" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="Screenshot (1) 2.png" alt="">
                     <div class="buttons2">
                         <button>View Demo</button>
@@ -162,7 +184,7 @@
                         <button>CSS</button>
                     </div>
                 </div>
-                <div class="work1">
+                <div class="work2" data-aos="zoom-in-down" data-aos-duration="3000">
                     <img src="Screenshot (1) 2 (1).png" alt="">
                     <div class="buttons2">
                         <button>View Demo</button>
@@ -184,29 +206,40 @@
             </div>
             <div class="inputs">
                 <div class="details1">
-                    <div class="input1">    
+                    <div class="input1" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">    
                         <input type="text" placeholder="Enter your first name">
                     </div>
-                    <div class="input1">
+                    <div class="input1" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
                        <input type="text" placeholder="Enter your last name">
                     </div>
                 </div>
                 <div class="details1">
-                    <div class="input1">
-                    <input type="text" placeholder="Enter your mobile number">
+                    <div class="input1" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                    <input type="text" placeholder="Enter your mobile no">
                     </div>
-                    <div class="input1">
+                    <div class="input1" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
                        <input type="email" placeholder="Enter your email id">
                     </div>
                 </div>
-                <div class="input1">
-                       <input type="text" placeholder="Write your message..." class="input2">
+                <div class="input1" data-aos="fade-up"
+     data-aos-duration="2000">
+                       <!-- <input type="text" placeholder="Write your message..." class="input2"> -->
+                        <textarea name="text" id="" placeholder="Write your message..." class="input2" ></textarea>
                 </div>
             </div>
-            <button>Send message</button>
+            <button class="send"  data-aos="fade-up"
+     data-aos-duration="2500">Send message</button>
         </section>
         <footer>
-            <h2>ASHIK DEEN N</h2>
+            <!-- <h2>ASHIK DEEN N</h2> -->
             <div class="underlineend">       
             </div>
             <div class="footercontents">
@@ -228,6 +261,14 @@
                 <img src="logos.png" alt="">
             </div>
         </footer>
-    </main>    
+    </main>   
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

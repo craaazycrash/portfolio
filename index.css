@@ -451,11 +451,23 @@ footer h2{
 }
 
 @media screen and (max-width:500px){
-    .nav,.container,.navigation,.herosection,.rightcontent,.buttons,.education,.educontents,.right,.right1,.cardsection,.cards,.row1,.card,.worksection,.works,.buttons2,.buttons3,.contact,.inputs,.details1,footer,.footercontents,.location,.copy{
+    .education,.educontents,.right,.right1,.cardsection,.cards,.row1,.card,.worksection,.works,.buttons2,.buttons3,.contact,.inputs,.details1,footer,.footercontents,.location,.copy{
         display: block;
     }
-    .work1{
+    .nav,.container,.navigation,.herosection,.logos,.rightcontent,buttons,.work1{
         display: flex;
+    }
+    .navigation{
+        gap: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .logos img{
+        width: 100%;
+    }
+    .aboutme h2{
+        font-size: 10px;
     }
     .work1 img{
         width: 100%;

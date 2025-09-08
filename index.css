@@ -180,7 +180,7 @@ buttons{
     flex-direction: column;
     gap: 50px;
     background-color: #080808d8;
-    padding: 50px 80px;
+    padding: 10px 30px;
     border: 1px solid rgba(255, 255, 255, 0.103);
 }
 .right1{

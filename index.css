@@ -282,11 +282,11 @@ buttons{
     gap: 100px;
     padding: 100px 0px 0px 0px;
 }
-.work1{
+.work{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     background-color: #080808d8;
     border: 1px solid rgba(255, 255, 255, 0.103);
     width: 500px;
@@ -295,31 +295,27 @@ buttons{
     border-radius: 20px;
     color: white;
 }
-.work1 img{
+.work p{
+    padding-top: 20px;
     padding-bottom: 20px;
 }
-.work2{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: start;
-    background-color: #080808d8;
-    border: 1px solid rgba(255, 255, 255, 0.103);
-    width: 500px;
-    padding: 20px 20px;
-    gap: 20px;
-    border-radius: 20px;
-    color: white;
-}
-.work2 img{
-    padding-bottom: 20px;
+.work img{
+    width: 100%;
 }
 .buttons2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 280px;
+    gap: 295px;
+    margin-top: 20px;
+}
+.buttons2 button{
+    background: linear-gradient(#7505FF,#5C0561);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    color: white;
 }
 button{
     background: linear-gradient(#7505FF,#5C0561);
@@ -327,11 +323,7 @@ button{
     border-radius: 5px;
     padding: 8px 10px 8px 10px;
     color: white;
-}
-.work1 p{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+}  
 .buttons3{
     display: flex;
     flex-wrap: wrap;
@@ -340,11 +332,14 @@ button{
     gap: 30px;
 }
 .buttons3 button{
-    background: linear-gradient(#212122,#817f81);
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 8px 10px 8px 10px;
+    background: transparent;
     color: white;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#080808d8, #080808d8), linear-gradient(#7505FF, #5C0561);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 .contact{
     display: flex;
@@ -454,7 +449,7 @@ footer h2{
     .education,.educontents,.right,.right1,.cardsection,.cards,.row1,.card,.worksection,.works,.buttons2,.buttons3,.contact,.inputs,.details1,footer,.footercontents,.location,.copy{
         display: block;
     }
-    .nav,.container,.navigation,.herosection,.logos,.rightcontent,buttons,.work1{
+    .nav,.container,.navigation,.herosection,.logos,.rightcontent,buttons,.work{
         display: flex;
     }
     .navigation{
@@ -469,10 +464,10 @@ footer h2{
     .aboutme h2{
         font-size: 10px;
     }
-    .work1 img{
+    .work img{
         width: 100%;
     }
-    .work1{
+    .work{
         width: 80%;
     }
     .input2{

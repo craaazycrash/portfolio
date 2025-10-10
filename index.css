@@ -489,35 +489,393 @@ footer h2{
     font-size: 15px;
 }
 
-@media screen and (max-width:500px){
-    .education,.educontents,.right,.right1,.cardsection,.cards,.row1,.card,.worksection,.works,.buttons2,.buttons3,.contact,.inputs,.details1,footer,.footercontents,.location,.copy{
-        display: block;
+/* Mobile Responsiveness - Enhanced Version */
+
+/* Tablets and Small Laptops */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
     }
-    .nav,.container,.navigation,.herosection,.logos,.rightcontent,buttons,.work{
-        display: flex;
+    
+    .navigation {
+        gap: 30px;
     }
-    .navigation{
-        gap: 25px;
+    
+    .herosection {
+        gap: 100px;
+        padding: 120px 20px;
     }
-    h3{
-        font-size: 20px;
+    
+    .rightcontent {
+        margin: 0px 20px 100px 20px;
+        padding: 30px;
     }
-    .logos img{
+    
+    .rightcontent p {
+        width: auto;
+    }
+    
+    .aboutme {
+        gap: 80px;
+        padding: 70px 20px;
+    }
+    
+    .aboutme img {
+        width: 40%;
+    }
+    
+    .aboutme p {
+        width: 500px;
+    }
+    
+    .works {
+        gap: 60px;
+    }
+    
+    .work {
+        width: 450px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .container {
+        width: 95%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
         width: 100%;
     }
-    .aboutme h2{
+    
+    .navigation h3 {
+        font-size: 16px;
+    }
+    
+    .navigation button {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Hero Section */
+    .herosection {
+        padding: 80px 20px;
+        gap: 50px;
+    }
+    
+    .rightcontent {
+        margin: 0;
+        padding: 20px;
+        width: 90%;
+    }
+    
+    .rightcontent h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .rightcontent p {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    /* About Section */
+    .aboutme {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+    
+    .aboutme img {
+        width: 60%;
+    }
+    
+    .aboutme p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .contentmain {
+        width: 90%;
+    }
+    
+    .contentmain h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    /* Education Section */
+    .educontents {
+        padding: 30px 20px;
+    }
+    
+    .right {
+        width: 90%;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .right1 h3 {
+        font-size: 14px;
+    }
+    
+    .class {
+        font-size: 16px;
+    }
+    
+    /* Skills Section */
+    .cards {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+    
+    .row1 {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 70px;
+        padding: 8px;
+    }
+    
+    .card p {
+        font-size: 12px;
+    }
+    
+    /* Works Section */
+    .works {
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    
+    .work {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .buttons2 {
+        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .buttons2 button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    .buttons3 {
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .buttons3 button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    /* Contact Section */
+    .contactlogos {
+        padding: 50px 20px;
+        gap: 30px;
+        width: 90%;
+    }
+    
+    .contactlogos img {
+        width: 6vw;
+        height: 4vh;
+    }
+    
+    .contactlogos .buttonrows {
+        font-size: 14px;
+        width: 100%;
+        padding: 15px 20px;
+    }
+    
+    .row1, .row2, .row3 {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .buttonrows {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .underlineend {
+        width: 90%;
+    }
+    
+    .footercontents {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    .location {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .location h3 {
+        font-size: 16px;
+    }
+    
+    .location p {
+        font-size: 14px;
+    }
+    
+    .copy {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .logos {
+        gap: 20px;
+    }
+    
+    .logos img {
+        width: 8vw;
+        height: 5vh;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    /* Heading and Underline */
+    .heading h1 {
+        font-size: 24px;
+    }
+    
+    .underline {
+        width: 200px;
+        height: 6px;
+    }
+    
+    /* Navigation */
+    .navigation h3 {
+        font-size: 14px;
+    }
+    
+    a {
         font-size: 10px;
     }
-    .work img{
-        width: 100%;
+    
+    /* Hero Section */
+    .rightcontent h1 {
+        font-size: 20px;
     }
-    .work{
+    
+    .rightcontent p {
+        font-size: 12px;
+    }
+    
+    /* About Section */
+    .aboutme img {
         width: 80%;
     }
-    .input2{
-        padding: 15px 100px 200px 15px;
+    
+    .contentmain h2 {
+        font-size: 18px;
     }
-    .underlineend{
-        width: auto;
+    
+    .hire {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    /* Skills */
+    .card {
+        width: 60px;
+        padding: 6px;
+    }
+    
+    .card img {
+        width: 60%;
+    }
+    
+    .card p {
+        font-size: 10px;
+    }
+    
+    /* Works */
+    .work {
+        width: 95%;
+    }
+    
+    .work p {
+        font-size: 13px;
+    }
+    
+    .buttons2 {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .buttons2 button {
+        width: 100%;
+    }
+    
+    /* Contact */
+    .contactlogos .buttonrows {
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+    
+    .contactlogos img {
+        width: 8vw;
+        height: 3vh;
+    }
+    
+    /* Footer */
+    .copy p {
+        font-size: 10px;
+    }
+    
+    .logos img {
+        width: 10vw;
+        height: 4vh;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 360px) {
+    .navigation {
+        gap: 10px;
+    }
+    
+    .navigation h3 {
+        font-size: 12px;
+    }
+    
+    .rightcontent h1 {
+        font-size: 18px;
+    }
+    
+    .heading h1 {
+        font-size: 20px;
+    }
+    
+    .underline {
+        width: 150px;
+        height: 5px;
+    }
+    
+    .card {
+        width: 50px;
+    }
+    
+    .work {
+        padding: 10px;
     }
 }

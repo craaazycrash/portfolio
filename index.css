@@ -19,7 +19,7 @@ nav{
     position: sticky;
     top: 0px;
     padding: 10px 0px;
-    border-bottom: 2x solid rgb(236, 229, 229);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 }
 .container{
     width: 95%;
@@ -42,6 +42,15 @@ nav{
     color: white;
     font-weight: 400;
 } 
+.cv{
+    background: linear-gradient(#7505FF,#5C0561);
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
 a{
     text-decoration: none;
     font-size: 12px;
@@ -81,12 +90,15 @@ a{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size:20px;
+    font-weight: 800;
 }
 .rightcontent p{
-    width: 700px;
+    width: 500px;
+    font-size: 13px;
     text-align: justify;
 }
-.logos{
+/* .logos{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -96,20 +108,7 @@ a{
 .logos img{
     width: 3vw;
     height: 8vh;
-}
-
-buttons{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    background: linear-gradient(#7505FF,#5C0561);
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 8px 10px 8px 10px;
-    color: white;
-} 
+ } */
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -143,8 +142,14 @@ buttons{
     gap: 30px;
 }
 .hire{
+    background: linear-gradient(#7505FF,#5C0561);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
     padding: 10px 25px;
     font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 .education{
     display: flex;
@@ -286,6 +291,7 @@ buttons{
     justify-content: center;
     gap: 100px;
     padding: 100px 0px 0px 0px;
+    margin-bottom: 200px;
 }
 .work{
     display: flex;
@@ -322,13 +328,13 @@ buttons{
     padding: 8px 10px 8px 10px;
     color: white;
 }
-button{
+/* button{
     background: linear-gradient(#7505FF,#5C0561);
     border: 1px solid black;
     border-radius: 5px;
     padding: 8px 10px 8px 10px;
     color: white;
-}  
+}   */
 .buttons3{
     display: flex;
     flex-wrap: wrap;
@@ -367,26 +373,24 @@ button{
     width: 2vw;
     height: 6vh;
 }
-.contactlogos .buttonrows{
-    color: white;
-    font-weight: 300;
-    font-size: 18px;
-}
-.row1{
+.row01{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 170px;
 }
-.row2{
+.row01 .buttonrows{
+    
+}
+.row02{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 180px;
 }
-.row3{
+.row03{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -441,6 +445,86 @@ input::placeholder{
     font-size: 12px;
 }
 footer{
+    background: linear-gradient(#7505FF,#6905B1,#5C0561);
+    padding-top: 50px;
+}
+.contactdetails{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center; 
+    gap: 150px;
+    padding-bottom: 50px;
+}
+.contactdetails p{
+    font-size: 13px;
+    color: white;
+}
+
+.aboutmyself{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+.aboutmyself p{
+    width: 300px;
+    text-align: justify;
+}
+.moreinfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contactmedirectly{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap: 5px;
+}
+.one img{
+    width: 1.8vw;
+    height: 2.5vh;
+}
+.underlineend{
+    border-bottom: 2px solid white;
+}
+.logos img{
+    width: 2vw;
+    height: 4vh;
+}
+.copy{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap: 800px;
+    padding:10px 0PX;
+    font-size: 15px;
+}
+/* footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -449,28 +533,23 @@ footer{
     color: white;
     margin-top: 100px;
     width: 100%;
-}
-footer h2{
+} */
+/* footer h2{
     padding-top: 100px;
     padding-bottom: 20px;
     background: linear-gradient(#7505FF,#6905B1,#5C0561);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.underlineend{
-    width: 1250px;
-    height: 4px;
-    background: linear-gradient(#7505FF,#6905B1,#5C0561);
-}
-.footercontents{
+} */
+/* .footercontents{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content:center;
     gap: 150px;
-}
-.location{
+} */
+/* .location{
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -478,16 +557,7 @@ footer h2{
     justify-content:center;
     flex-direction: column;
     gap: 20px;
-}
-.copy{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:center;
-    gap: 650px;
-    padding: 50px 0px 20px 0px;
-    font-size: 15px;
-}
+} */
 
 /* Mobile Responsiveness - Enhanced Version */
 
@@ -517,7 +587,7 @@ footer h2{
     
     .aboutme {
         gap: 80px;
-        padding: 70px 20px;
+        padding: 100px 20px;
     }
     
     .aboutme img {

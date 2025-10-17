@@ -283,7 +283,7 @@ a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #080808d8;
+    background-color: #0a0808;
     border: 1px solid rgba(255, 255, 255, 0.103);
     width: 500px;
     padding: 20px 20px;
@@ -297,6 +297,14 @@ a{
 .work img{
     width: 100%;
 }
+.work h3{
+    padding-top: 15px;
+    color: #5c5b5b;
+    border-bottom: 2px solid #7505FF;
+    margin-bottom: 1rem;
+    text-underline-offset: 4px;
+}
+
 .buttons2{
     display: flex;
     flex-wrap: wrap;
@@ -709,7 +717,7 @@ footer{
     }
     
     .underlineend {
-        width: 90%;
+        width: 100%;
         
     }
     
@@ -749,11 +757,20 @@ footer{
     }
 
     .contactdetails{
-        gap: 35px;
+        gap: 30px;
+    }
+
+    .contactdetails p{
+        font-size: 12px;
+    }
+
+    .contactdetails h3{
+        font-size: 15px;
     }
     
     .one img{
-        width: 100%;
+        width: 4vw;
+        height: 2vh;
     }
 }
 
@@ -804,14 +821,23 @@ footer{
     .card img {
         width: 60%;
     }
-    
-    .card p {
-        font-size: 10px;
+
+    .bootstrap img {
+        padding: 5px 0px 5px 12px;
+    }
+
+    .ajax img {
+        padding: 12px 0px 10px 12px;
     }
     
     .figma img{
         width: 30%;
+        padding: 5px 0px 5px 20px;
     }
+    .card p {
+        font-size: 10px;
+    }
+    
     .work {
         width: 95%;
     }

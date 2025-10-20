@@ -72,7 +72,12 @@ a{
     height: 40vh;
 }
 .rightcontent{
-    background-color: white;
+    background: rgba(255, 255, 255, 0.15); /* transparent white */
+    backdrop-filter: blur(2px); /* glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    border: 1.5px solid rgba(255, 255, 255, 0.3); /* subtle border */
+    border-radius: 15px;
+    color: #fff; 
     color: black;
     display: flex;
     flex-wrap: wrap;
@@ -80,23 +85,22 @@ a{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 0px 0px 150px 400px;
     border-radius: 20px;
 }
 
 .rightcontent h1{
-    background: linear-gradient(#7505FF,#6905B1,#5C0561);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size:20px;
-    font-weight: 800;
+    -webkit-text-stroke: 0.5px white; 
+    color: #7505FF;
+    font-size:22px;
+    font-weight: 900;
 }
 .rightcontent p{
     width: 500px;
     font-size: 13px;
     text-align: justify;
+    font-weight: 700;
 }
 .about{
     display: flex;
@@ -607,8 +611,8 @@ footer{
     }
     
     .aboutme p {
-        width: 90%;
-        font-size: 14px;
+        width: 80%;
+        font-size: 12px;
         line-height: 24px;
     }
     
@@ -626,8 +630,8 @@ footer{
     }
     
     .right {
-        width: 90%;
-        padding: 20px;
+        width: 70%;
+        padding: 15px;
         gap: 30px;
     }
     
@@ -666,6 +670,11 @@ footer{
     .work {
         width: 90%;
         padding: 15px;
+    }
+
+    .work h3{
+        font-weight: 600;
+        font-size: 14px
     }
     
     .buttons2 {
@@ -801,7 +810,7 @@ footer{
     }
     
     .aboutme img {
-        width: 80%;
+        width: 50%;
     }
     
     .contentmain h2 {

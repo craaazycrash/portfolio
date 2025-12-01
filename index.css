@@ -508,9 +508,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
-    gap: 800px;
-    padding:10px 0PX;
+    justify-content:space-between;
+    padding:10px 10px;
     font-size: 15px;
 }
 

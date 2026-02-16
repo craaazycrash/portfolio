@@ -21,6 +21,7 @@ nav{
     padding: 10px 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 }
+
 .container{
     width: 95%;
     margin-left: auto;
@@ -51,6 +52,7 @@ nav{
     font-weight: 600;
     color: white;
 }
+
 a{
     text-decoration: none;
     font-size: 12px;
@@ -274,48 +276,55 @@ a{
     padding-top: 70px;
 }
 .works{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    padding: 100px 0px 0px 0px;
-    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0px 70px;
 }
+
+
 .work{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
     background-color: #0a0808;
     border: 1px solid rgba(255, 255, 255, 0.103);
-    width: 500px;
-    padding: 20px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
 }
 .work p{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 15px;
 }
 .work img{
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .work h3{
+    font-size: 18px;
     padding-top: 15px;
-    color: #5c5b5b;
-    border-bottom: 2px solid #7505FF;
-    margin-bottom: 1rem;
-    text-underline-offset: 4px;
+}
+
+.mainwork{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
 }
 
 .buttons2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 295px;
-    margin-top: 20px;
+    justify-content: space-between;
+    gap: 140px;
+    margin-top: 15px;
 }
 .buttons2 button{
     background: linear-gradient(#7505FF,#5C0561);
@@ -329,7 +338,7 @@ a{
     flex-wrap: wrap;
     align-items: start;
     justify-content: start;
-    gap: 30px;
+    gap: 10px;
 }
 .buttons3 button{
     background: transparent;
@@ -369,9 +378,7 @@ a{
     justify-content: center;
     gap: 170px;
 }
-.row01 .buttonrows{
-    
-}
+
 .row02{
     display: flex;
     flex-wrap: wrap;
@@ -436,6 +443,7 @@ input::placeholder{
 footer{
     background: linear-gradient(#7505FF,#6905B1,#5C0561);
     padding-top: 50px;
+    margin-top: 100px;
 }
 .contactdetails{
     display: flex;

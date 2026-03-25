@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen – Ashik Deen N</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    </head>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  
+</head>
 <body>
-    <nav>
+
+<!-- ═══════════════════════════════ SPLASH ═══════════════════════════════ -->
+<div id="splash" role="status" aria-label="Loading portfolio">
+
+  <!-- Background canvas for particle field -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Grid overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Ambient glow orbs -->
+  <div class="glow-orb orb1"></div>
+  <div class="glow-orb orb2"></div>
+  <div class="glow-orb orb3"></div>
+
+  <!-- Floating glassmorphism shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+  <div class="shape shape-4"></div>
+  <div class="shape shape-5"></div>
+  <div class="shape shape-6"></div>
+
+  <!-- Corner brackets -->
+  <div class="bracket bracket-tl"></div>
+  <div class="bracket bracket-tr"></div>
+  <div class="bracket bracket-bl"></div>
+  <div class="bracket bracket-br"></div>
+
+  <!-- Rotating dot rings -->
+  <div class="dot-ring"></div>
+  <div class="dot-ring dot-ring-2"></div>
+
+  <!-- Center content -->
+  <div class="splash-center">
+    <div class="monogram"><img src="https://i.pinimg.com/originals/f9/b8/8d/f9b88deeae101d6a8572063bb63c286e.gif" alt=""></div>
+
+    <div>
+      <p class="welcome-eyebrow">Welcome to my portfolio</p>
+      <h1 class="welcome-name">Ashik Deen</h1>
+      <p class="welcome-sub">UI/UX Designer &amp; Full Stack Web Developer</p>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <span class="progress-label" id="progress-label">Loading</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ SITE ═══════════════════════════════ -->
+<div id="site-content">
+  <nav>
         <div class="container">
             <div class="heading">
                 <a href="#home"><h2>ASHIK DEEN N</h2></a>
@@ -510,14 +567,16 @@
                     </div>
                 </div>
         </footer>
-    </main>   
-    
-    
+    </main>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 <script>
   AOS.init();
 </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
 </html>

@@ -25,7 +25,6 @@ body{
       overflow-x: hidden;
     }
 
-    /* ── SPLASH OVERLAY ── */
     #splash {
       position: fixed;
       inset: 0;
@@ -42,7 +41,6 @@ body{
       pointer-events: none;
     }
 
-    /* ── CANVAS BG ── */
     #bg-canvas {
       position: absolute;
       inset: 0;
@@ -50,7 +48,6 @@ body{
       height: 100%;
     }
 
-    /* ── GRID LINES ── */
     .grid-overlay {
       position: absolute;
       inset: 0;
@@ -62,7 +59,6 @@ body{
       -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
     }
 
-    /* ── GLOW ORB ── */
     .glow-orb {
       position: absolute;
       border-radius: 50%;
@@ -95,7 +91,6 @@ body{
       50% { opacity: 1; transform: translate(-50%,-50%) scale(1.12); }
     }
 
-    /* ── FLOATING 3D SHAPES ── */
     .shape {
       position: absolute;
       border-radius: 16px;
@@ -163,7 +158,6 @@ body{
       50% { transform: rotate(-20deg) translateY(20px); }
     }
 
-    /* ── CORNER BRACKETS ── */
     .bracket {
       position: absolute;
       width: 28px; height: 28px;
@@ -175,7 +169,6 @@ body{
     .bracket-bl { bottom: 32px; left: 32px; border-width: 0 0 1.5px 1.5px; }
     .bracket-br { bottom: 32px; right: 32px; border-width: 0 1.5px 1.5px 0; }
 
-    /* ── CENTER CONTENT ── */
     .splash-center {
       position: relative;
       z-index: 2;
@@ -187,7 +180,6 @@ body{
       padding: 0 24px;
     }
 
-    /* monogram badge */
     .monogram img{
       width: 300px; height: 200px;
       border-radius: 20px;
@@ -208,7 +200,6 @@ body{
       to   { opacity: 1; transform: scale(1) rotate(0deg); }
     }
 
-    /* welcome text */
     .welcome-eyebrow {
       font-size: 11px;
       letter-spacing: 4px;
@@ -241,7 +232,6 @@ body{
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── PROGRESS BAR ── */
     .progress-wrap {
       display: flex;
       flex-direction: column;
@@ -272,7 +262,6 @@ body{
       color: rgba(255,255,255,0.25);
     }
 
-    /* ── DOT RING ── */
     .dot-ring {
       position: absolute;
       width: 320px; height: 320px;
@@ -306,7 +295,6 @@ body{
     }
     @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-    /* ── MAIN SITE CONTENT ── */
     #site-content {
       opacity: 0;
       transition: opacity 0.8s ease 0.15s;
@@ -315,7 +303,6 @@ body{
       opacity: 1;
     }
 
-    /* ── DEMO HERO (placeholder for portfolio hero) ── */
     .demo-hero {
       min-height: 100vh;
       display: flex;
@@ -370,7 +357,6 @@ nav{
     color: inherit;
 }
 
-/* underline */
 nav h3::after{
     content: "";
     position: absolute;
@@ -383,7 +369,6 @@ nav h3::after{
     transform: translateX(-50%);
 }
 
-/* hover effect */
 nav h3:hover::after{
     width: 100%;
 }
@@ -409,15 +394,63 @@ nav h3:hover::after{
     color: white;
     font-weight: 400;
 } 
-.cv{
-    background: linear-gradient(#7505FF,#5C0561);
-    border: 1px solid white;
-    border-radius: 12px;
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
+
+.cv {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #7505FF;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
 }
+
+.cv__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.cv:hover {
+  background-color: #000;
+}
+
+.cv:hover .cv__icon-wrapper {
+  color: #000;
+}
+
+.cv__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.cv:hover .cv__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.cv:hover .cv__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
 
 a{
     text-decoration: none;
@@ -440,10 +473,10 @@ a{
     height: 40vh;
 }
 .rightcontent{
-    background: rgba(255, 255, 255, 0.15); /* transparent white */
-    backdrop-filter: blur(2px); /* glass blur effect */
-    -webkit-backdrop-filter: blur(10px); /* for Safari */
-    border: 1.5px solid rgba(255, 255, 255, 0.3); /* subtle border */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1.5px solid rgba(255, 255, 255, 0.3); 
     border-radius: 15px;
     color: #fff; 
     color: black;

@@ -63,7 +63,6 @@
     window.addEventListener('resize', () => { resize(); createParticles(); });
   })();
 
-  /* ── PROGRESS BAR ── */
   const fill = document.getElementById('progress-fill');
   const label = document.getElementById('progress-label');
   const DURATION = 3200;
@@ -90,7 +89,6 @@
   }
   requestAnimationFrame(tick);
 
-  /* ── REVEAL ── */
   function reveal() {
     const splash = document.getElementById('splash');
     const site = document.getElementById('site-content');

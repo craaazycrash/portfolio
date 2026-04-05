@@ -1,621 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Ashik Deen N</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ashik Deen N</title>
+    <link rel="icon" type="image/png" href="./assets/logos/tabicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
+    <div id="splash" role="status" aria-label="Loading portfolio">
 
-<div id="splash" role="status" aria-label="Loading portfolio">
+        <canvas id="bg-canvas"></canvas>
 
-  <canvas id="bg-canvas"></canvas>
+        <div class="grid-overlay"></div>
 
-  <div class="grid-overlay"></div>
+        <div class="glow-orb orb1"></div>
+        <div class="glow-orb orb2"></div>
+        <div class="glow-orb orb3"></div>
 
-  <div class="glow-orb orb1"></div>
-  <div class="glow-orb orb2"></div>
-  <div class="glow-orb orb3"></div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
 
-  <div class="shape shape-1"></div>
-  <div class="shape shape-2"></div>
-  <div class="shape shape-3"></div>
-  <div class="shape shape-4"></div>
-  <div class="shape shape-5"></div>
-  <div class="shape shape-6"></div>
+        <div class="bracket bracket-tl"></div>
+        <div class="bracket bracket-tr"></div>
+        <div class="bracket bracket-bl"></div>
+        <div class="bracket bracket-br"></div>
 
-  <div class="bracket bracket-tl"></div>
-  <div class="bracket bracket-tr"></div>
-  <div class="bracket bracket-bl"></div>
-  <div class="bracket bracket-br"></div>
+        <div class="dot-ring"></div>
+        <div class="dot-ring dot-ring-2"></div>
 
-  <div class="dot-ring"></div>
-  <div class="dot-ring dot-ring-2"></div>
+        <div class="splash-center">
+            <div class="monogram"><img
+                    src="https://i.pinimg.com/originals/f9/b8/8d/f9b88deeae101d6a8572063bb63c286e.gif" alt=""></div>
 
-  <div class="splash-center">
-    <div class="monogram"><img src="https://i.pinimg.com/originals/f9/b8/8d/f9b88deeae101d6a8572063bb63c286e.gif" alt=""></div>
-
-    <div>
-      <p class="welcome-eyebrow">Welcome to my portfolio</p>
-      <h1 class="welcome-name">Ashik Deen</h1>
-      <p class="welcome-sub">UI/UX Designer &amp; Full Stack Web Developer</p>
-    </div>
-
-    <div class="progress-wrap">
-      <div class="progress-track">
-        <div class="progress-fill" id="progress-fill"></div>
-      </div>
-      <span class="progress-label" id="progress-label">Loading</span>
-    </div>
-  </div>
-
-</div>
-
-<div id="site-content">
-  <nav>
-        <div class="container">
-            <div class="heading">
-                <a href="#home"><h2>ASHIK DEEN N</h2></a>
+            <div>
+                <p class="welcome-eyebrow">Welcome to my portfolio</p>
+                <h1 class="welcome-name">Ashik Deen</h1>
+                <p class="welcome-sub">UI/UX Designer &amp; Full Stack Web Developer</p>
             </div>
-            <div class="navigation">
-                <a href="#about"><h3>ABOUT</h3></a>
-                <a href="#education"><h3>EDUCATION</h3></a>
-                <a href="#skills"><h3>SKILLS</h3></a>
-                <a href="#works"><h3>WORKS</h3></a>
-                <a href="#contact"><h3>CONTACT</h3></a>
+
+            <div class="progress-wrap">
+                <div class="progress-track">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <span class="progress-label" id="progress-label">Loading</span>
             </div>
         </div>
-    </nav>
-    <main>
-        <section class="herosection" id="home">
-            <div class="rightcontent">
-                <h1>UI UX Designer/Full Stack Developer</h1>
-                <p>A creative professional passionate about blending design and technology to craft intuitive, responsive, and visually engaging digital experiences. Eager to contribute to impactful projects, solve challenges, and grow through continuous learning.</p>
-                <a href="./assets/documents/Ashik Deen N Resume(Full Stack Web Developer).pdf" target="_blank">
-<button href="#" class="cv" style="--clr: #7808d0">
-  <span class="cv__icon-wrapper">
-    <svg
-      viewBox="0 0 14 15"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="cv__icon-svg"
-      width="10"
-    >
-      <path
-        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-        fill="currentColor"
-      ></path>
-    </svg>
 
-    <svg
-      viewBox="0 0 14 15"
-      fill="none"
-      width="10"
-      xmlns="http://www.w3.org/2000/svg"
-      class="cv__icon-svg cv__icon-svg--copy"
-    >
-      <path
-        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  </span>
-  Download Resume
-</button>
-</a>
-            </div>
-        </section>
-        <section class="about" id="about">
-             <div class="heading">
-                <h1>ABOUT</h1>
-            </div>
-            <div class="underline">       
-            </div>
-            <div class="aboutme" >
-                
-                <img src="profile.jpg" alt=""   data-aos="zoom-in-right" data-aos-duration="3000">
-                <div class="contentmain"   data-aos="zoom-in-left" data-aos-duration="3000">
-                    <h2>I am Ashik Deen N</h2>
-                    <p>I’m a Full-Stack Developer proficient in HTML, CSS, JavaScript, Bootstrap, React.js, Node.js, WordPress, MongoDB, Figma, and responsive design frameworks. I specialize in crafting visually appealing and highly functional user interfaces. Feel free to explore my portfolio to see my work, and if you have a project or idea in mind, I’m always open to new opportunities and collaborations.</p>
-                    <a href="#contact"><button class="hire">Hire me</button></a>
+    </div>
 
+    <div id="site-content">
+        <nav>
+            <div class="container">
+                <div class="heading">
+                    <a href="#home">
+                        <h2>ASHIK DEEN N</h2>
+                    </a>
+                </div>
+                <div class="navigation">
+                    <a href="#about">
+                        <h3>ABOUT</h3>
+                    </a>
+                    <a href="#education">
+                        <h3>EDUCATION</h3>
+                    </a>
+                    <a href="#skills">
+                        <h3>SKILLS</h3>
+                    </a>
+                    <a href="#works">
+                        <h3>WORKS</h3>
+                    </a>
+                    <a href="#contact">
+                        <h3>CONTACT</h3>
+                    </a>
                 </div>
             </div>
+        </nav>
+        <main>
+            <section class="herosection" id="home">
+                <div class="rightcontent">
+                    <h1>UI UX Designer/Full Stack Developer</h1>
+                    <p>A creative professional passionate about blending design and technology to craft intuitive,
+                        responsive, and visually engaging digital experiences. Eager to contribute to impactful
+                        projects, solve challenges, and grow through continuous learning.</p>
+                    <a href="./assets/documents/Ashik Deen N Resume(Full Stack Web Developer).pdf" target="_blank">
+                        <button href="#" class="cv" style="--clr: #7808d0">
+                            <span class="cv__icon-wrapper">
+                                <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="cv__icon-svg" width="10">
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                        fill="currentColor"></path>
+                                </svg>
 
-        </section>
-        <section class="education" id="education">
-            <div class="heading">
-                <h1>EDUCATION</h1>
-            </div>
-            <div class="underline">       
-            </div>
-            <div class="educontents"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="right">
-                    <div class="right1">
-                        <p class="class">B.E.COMPUTER SCIENCE AND ENGINEERING</p>
-                        <h3>KCG COLLEGE OF TECHNOLOGY, Karapakkam, Chennai - 600097.</h3>
-                        <p>2021 - 2025</p>                    
-                    </div>
-                    <div class="right1">
-                        <p class="class">CLASS XII [CBSE]</p>
-                        <h3>SHRINE VAILANKANNI SENIOR SECONDARY SCHOOL, T. Nagar, Chennai - 600017.</h3>
-                        <p>2020 - 2021</p>                    
-                    </div>
-                    <div class="right1">
-                        <p class="class">CLASS X [CBSE]</p>
-                        <h3>MAHATMA GANDHI VIDYALAYA, T. Nagar, Chennai - 600017.</h3>
-                        <p>2018 - 2019</p>
+                                <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                    class="cv__icon-svg cv__icon-svg--copy">
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </span>
+                            Download Resume
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="heading">
+                    <h1>ABOUT</h1>
+                </div>
+                <div class="underline">
+                </div>
+                <div class="aboutme">
+                    <img src="./assets/images/profile.jpg" alt="" data-aos="zoom-in-right" data-aos-duration="3000">
+                    <div class="contentmain" data-aos="zoom-in-left" data-aos-duration="3000">
+                        <h2>I am Ashik Deen N</h2>
+                        <p>I’m a Full-Stack Developer proficient in HTML, CSS, JavaScript, Bootstrap, React.js, Node.js,
+                            WordPress, MongoDB, Figma, and responsive design frameworks. I specialize in crafting
+                            visually appealing and highly functional user interfaces. Feel free to explore my portfolio
+                            to see my work, and if you have a project or idea in mind, I’m always open to new
+                            opportunities and collaborations.</p>
+                        <a href="#contact"><button class="hire">Hire me</button></a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="cardsection" id="skills">
-           <div class="heading">
-                <h1>SKILLS</h1>
-            </div>
-            <div class="underline">       
-            </div> 
-            <div class="cards">
-                <div class="row1">
-                    <div class="card" data-aos="flip-left" data-aos-duration="600">
-                        <img src="html.png" alt="">
-                        <p>HTML</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1000">
-                        <img src="css.png" alt="">
-                        <p>CSS</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1400">
-                        <img src="javascript.png" alt="">
-                        <p>Javascript</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1800">
-                        <div class="bootstrap">
-                            <img src="bootstarp.png" alt="">
+
+            </section>
+            <section class="education" id="education">
+                <div class="heading">
+                    <h1>EDUCATION</h1>
+                </div>
+                <div class="underline">
+                </div>
+                <div class="educontents" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="right">
+                        <div class="right1">
+                            <p class="class">B.E.COMPUTER SCIENCE AND ENGINEERING</p>
+                            <h3>KCG COLLEGE OF TECHNOLOGY, Karapakkam, Chennai - 600097.</h3>
+                            <p>2021 - 2025</p>
                         </div>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="2200">
-                        <div class="ajax">
-                            <img src="ajax.png" alt="">
+                        <div class="right1">
+                            <p class="class">CLASS XII [CBSE]</p>
+                            <h3>SHRINE VAILANKANNI SENIOR SECONDARY SCHOOL, T. Nagar, Chennai - 600017.</h3>
+                            <p>2020 - 2021</p>
                         </div>
-                        <p>Ajax</p>
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="card" data-aos="flip-left" data-aos-duration="600">
-                        <img src="jquery.png" alt="">
-                        <p>Jquery</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1000">
-                        <img src="react.png" alt="">
-                        <p>ReactJS</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1400">
-                        <img src="nodejs.png" alt="">
-                        <p>NodeJS</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1800">
-                        <img src="Express.png" alt="">
-                        <p>ExpressJS</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="2200">
-                        <img src="python.png" alt="">
-                        <p>Python</p>
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="card" data-aos="flip-left" data-aos-duration="600">
-                        <img src="mongodb.png" alt="">
-                        <p>MongoDB</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1000">
-                        <img src="sql.png" alt="">
-                        <p>MySQL</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1400">
-                       <div class="figma">              <img src="figma.png" alt="">
-                        </div>
-                        <p>Figma</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="1800">
-                        <img src="photoshop.png" alt="">
-                        <p>Photoshop</p>
-                    </div>
-                    <div class="card" data-aos="flip-left" data-aos-duration="2200">
-                        <img src="wordpress.png" alt="">
-                        <p>Wordpress</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="worksection" id="works">
-            <div class="heading">
-                <h1>WORKS</h1>
-            </div>
-            <div class="underline">       
-            </div>
-            <div class="works">
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Sip and bite.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://sip-and-bite-cafe.netlify.app/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/sip-and-bite-cafe" target="_blank"><button>Source Code</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>Café Ordering e-commerce platform</h3>
-                        <p>A sleek café website with an interactive menu, add-to-cart system, real-time bill calculation with real bill design, and a modern, attractive UI.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>React</button>
-                            <button>Bootstrap</button>
+                        <div class="right1">
+                            <p class="class">CLASS X [CBSE]</p>
+                            <h3>MAHATMA GANDHI VIDYALAYA, T. Nagar, Chennai - 600017.</h3>
+                            <p>2018 - 2019</p>
                         </div>
                     </div>
                 </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="VerseAI.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/verseAI/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/verseAI" target="_blank"><button>Source Code</button></a>
+            </section>
+            <section class="cardsection" id="skills">
+                <div class="heading">
+                    <h1>SKILLS</h1>
+                </div>
+                <div class="underline"></div>
+
+                <div class="skills-outer">
+                    <div class="skill-grid">
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="500">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/html.png" alt="HTML">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-tag">Markup</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="600">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/css.png" alt="CSS">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-tag">Styling</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="700">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/javascript.png" alt="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-tag">Scripting</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/bootstarp.png" alt="Bootstrap">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-tag">Framework</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="900">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/jquery.png" alt="jQuery">
+                            <span class="skill-name">jQuery</span>
+                            <span class="skill-tag">Library</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="500">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/react.png" alt="React">
+                            <span class="skill-name">React</span>
+                            <span class="skill-tag">Framework</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="600">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/nodejs.png" alt="Node.js">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-tag">Runtime</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="700">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/Express.png" alt="Express">
+                            <span class="skill-name">Express</span>
+                            <span class="skill-tag">Backend</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/python.png" alt="Python">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-tag">Language</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="900">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/ajax.png" alt="Ajax">
+                            <span class="skill-name">Ajax</span>
+                            <span class="skill-tag">Async</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="500">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/mongodb.png" alt="MongoDB">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-tag">NoSQL</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="600">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/sql.png" alt="MySQL">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="700">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/figma.png" alt="Figma">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-tag">Design</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="800">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/photoshop.png" alt="Photoshop">
+                            <span class="skill-name">Photoshop</span>
+                            <span class="skill-tag">Design</span>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-duration="900">
+                            <div class="skill-accent"></div>
+                            <img src="./assets/logos/wordpress.png" alt="WordPress">
+                            <span class="skill-name">WordPress</span>
+                            <span class="skill-tag">CMS</span>
+                        </div>
+
                     </div>
-                    <div class="mainwork">
-                        <h3>Verse AI – Smart Chat Assistant Platform</h3>
-                        <p>A refined AI chat assistant platform—Verse AI—for fluid, boundary-less conversation, seamlessly connecting users with intelligent, responsive dialogue.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
+                </div>
+            </section>
+            <section class="worksection" id="works">
+                <div class="heading">
+                    <h1>WORKS</h1>
+                </div>
+                <div class="underline">
+                </div>
+                <div class="works">
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Sip and bite.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://sip-and-bite-cafe.netlify.app/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/sip-and-bite-cafe" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Café Ordering e-commerce platform</h3>
+                            <p>A sleek café website with an interactive menu, add-to-cart system, real-time bill
+                                calculation with real bill design, and a modern, attractive UI.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>React</button>
+                                <button>Bootstrap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/VerseAI.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/verseAI/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/verseAI" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Verse AI – Smart Chat Assistant Platform</h3>
+                            <p>A refined AI chat assistant platform—Verse AI—for fluid, boundary-less conversation,
+                                seamlessly connecting users with intelligent, responsive dialogue.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Employee management.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/employee-management-system/"
+                                target="_blank"><button>View Demo</button></a>
+                            <a href="https://github.com/craaazycrash/employee-management-system"
+                                target="_blank"><button>Source Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Employee Management System</h3>
+                            <p>A intuitive employee management system that streamlines workforce operations enabling
+                                adding, listing, editing, and tracking employees and departments with elegance.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                                <button>Firebase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/FinTrack.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://fin-track-nu-ten.vercel.app/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/FinTrack" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>FinTrack</h3>
+                            <p>A personal finance dashboard to track income, expenses, and spending patterns with
+                                role-based access control for admin and user.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                                <button>React</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Soapshop.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/soapshop/"><button>View Demo</button></a>
+                            <a href="https://github.com/craaazycrash/soapshop" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Soap Shop - Checkout System</h3>
+                            <p>Responsive soap product website with cart, total calculation, and QR-based checkout
+                                payment system integration feature.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>JavaScript</button>
+                                <button>Bootstrap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Alphabanana.png" alt="">
+                        <div class="buttons2">
+                            <a
+                                href="https://www.figma.com/design/PfyCFwjyqWT0adOJkoPlcm/Company-Tasks?node-id=200-78&t=4QSG2df50c2PXuos-1"><button>View
+                                    Design</button></a>
+                            <a href="https://www.figma.com/proto/PfyCFwjyqWT0adOJkoPlcm/Company-Tasks?node-id=232-1709&p=f&t=ETCBqGK6IKmtk2eQ-1&scaling=contain&content-scaling=fixed&page-id=200%3A78&starting-point-node-id=232%3A1768"
+                                target="_blank"><button>Prototype</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Alpha Banana</h3>
+                            <p>An alphabet-learning game for kids where challenges reward correct answers with bananas,
+                                motivating learning through animations, rewards, and a smiling monkey character.</p>
+                            <div class="buttons3">
+                                <button>Figma</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/p3dLearning.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/p3d-learning-platform/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/p3d-learning-platform"
+                                target="_blank"><button>Source Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>P3D Technologies Learning Platform</h3>
+                            <p>Designed and developed a responsive website for a course-based company, enabling seamless
+                                learning access, intuitive navigation, and modern user experience.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Crash garage.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/crashgarage/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/crashgarage" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Crash Garage – Vintage Motorcycle Showcase</h3>
+                            <p>A bold and sleek single-page site for a vintage motorcycle collection.Highlights include
+                                a custom hero section, smooth scroll navigation, and personal branding.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Dreamy bakes.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/dreamybakes/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/dreamybakes" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Dreamy Bakes – Luxury Cake Shop Website</h3>
+                            <p>A visually rich multi-page website for a luxury cake shop, featuring smooth navigation,
+                                multiple product sections, and a delightful browsing experience.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/QRcodegenerator.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://texttoqrcodegenerator.onrender.com/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/texttoqrcodegenerator"
+                                target="_blank"><button>Source Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>QR Code Generator</h3>
+                            <p>Designed a sea-themed text-to-QR code generator enabling instant conversion with clean
+                                UI, smooth interactions, and responsive design.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>ExpressJS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/LocateX.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/locateX/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/locateX" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>LocateX – Destination Finder & Route Planner</h3>
+                            <p>A smart destination search and routing app—LocateX—offering interactive mapping, search,
+                                directions, and location sharing with minimal, modern design.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                                <button>AJAX</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Funky calculator.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/funky-calculator/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/funky-calculator" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Funky Calculator – Interactive UI Design</h3>
+                            <p>A bold, playful Funky Calculator with vibrant visuals, smooth interactions, and unique
+                                design, transforming ordinary calculations into an energetic, enjoyable experience.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Rock paper scissor.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/rock-paper-scissor/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/rock-paper-scissor" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Rock Paper Scissors Game</h3>
+                            <p>A classic Rock Paper Scissors game where users compete against the computer, making
+                                choices each round, tracking scores, and enjoying an interactive gaming experience.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Guess number.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/guess-number/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/guess-number" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Guess the Number Game</h3>
+                            <p>A simple, engaging JavaScript game where users guess a random number between 1–10,
+                                receiving feedback and five attempts to succeed.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Dice roll.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/roll-dice/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/roll-dice" target="_blank"><button>Source
+                                    Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Roll the Dice Game</h3>
+                            <p>A competitive dice game where users roll against the computer, comparing outcomes each
+                                round, tracking scores, and enjoying a simple yet engaging interactive experience.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/gtgfragrance.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://craaazycrash.github.io/gtgfragranceperfumes/" target="_blank"><button>View
+                                    Demo</button></a>
+                            <a href="https://github.com/craaazycrash/gtgfragranceperfumes"
+                                target="_blank"><button>Source Code</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>GTG Perfumes</h3>
+                            <p>Designed a modern, nature-inspired landing page showcasing premium fragrances,
+                                highlighting product strength, natural ingredients, customer trust, and strong
+                                call-to-action for conversions.</p>
+                            <div class="buttons3">
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>Java Script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Fashionapp.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://www.figma.com/design/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=0-1&t=LLujkK5jCg1PCsFF-1"
+                                target="_blank"><button>View Design</button></a>
+                            <a href="https://www.figma.com/proto/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=2096-6390&p=f&t=0FnPpTFKGuTsudcq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                                target="_blank"><button>Prototype</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Fashion App Prototype</h3>
+                            <p>Designed a sleek mobile fashion app featuring modern UI, card design and user-friendly
+                                layouts to enhance online shopping and brand engagement experience.</p>
+                            <div class="buttons3">
+                                <button>Figma</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/JobYaari.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://www.figma.com/design/PDDRD6M83xPPVYXlv6L4jv/Job-yaari-Mobile-view-?node-id=0-1&t=FmQaPhYnyCNmFACC-1"
+                                target="_blank"><button>View Design</button></a>
+                            <a href="https://www.figma.com/proto/PDDRD6M83xPPVYXlv6L4jv/Job-yaari-Mobile-view-?node-id=13-42&p=f&t=3OBOdVpuVLRPt02P-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A3555"
+                                target="_blank"><button>Prototype</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Job Yaari – Smart Job Discovery Mobile App</h3>
+                            <p>Designed a clean and intuitive mobile job search app with structured menus and
+                                user-friendly layouts to improve job discovery and navigation experience.</p>
+                            <div class="buttons3">
+                                <button>Figma</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/Agora.png" alt="">
+                        <div class="buttons2">
+                            <a
+                                href="https://www.figma.com/design/PfyCFwjyqWT0adOJkoPlcm/Aevevo-Task?node-id=0-1&t=mEmhJdMlIdWnfeH4-1"><button>View
+                                    Design</button></a>
+                            <a href="https://www.figma.com/proto/PfyCFwjyqWT0adOJkoPlcm/Aevevo-Task?node-id=76-106&t=9S9oNzXEpInC49Jm-1&scaling=contain&content-scaling=fixed&page-id=0%3A1"
+                                target="_blank"><button>Prototype</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>Agora.io (Redesigned UI/UX)</h3>
+                            <p>Redesigned Agora.io’s real-time engagement UI in Figma with refreshed layout, improved
+                                navigation, and clean components to elevate user experience for video, and messaging
+                                tools.</p>
+                            <div class="buttons3">
+                                <button>Figma</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <img src="./assets/images/fitnut.png" alt="">
+                        <div class="buttons2">
+                            <a href="https://www.figma.com/design/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=193-578&t=LLujkK5jCg1PCsFF-1"
+                                target="_blank"><button>View Design</button></a>
+                            <a href="https://www.figma.com/proto/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=2096-831&p=f&t=I9cmLrkuYUQTCVn6-1&scaling=scale-down&content-scaling=fixed&page-id=193%3A578"
+                                target="_blank"><button>Prototype</button></a>
+                        </div>
+                        <div class="mainwork">
+                            <h3>FitNut - Fitness App Prototype</h3>
+                            <p>Designed a user-centered fitness app prototype focusing on intuitive navigation,
+                                personalized workouts, and progress tracking to enhance engagement and healthy lifestyle
+                                habits.</p>
+                            <div class="buttons3">
+                                <button>Figma</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Employee management.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/employee-management-system/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/employee-management-system" target="_blank"><button>Source Code</button></a>
+            </section>
+            <footer id="contact">
+                <div class="contactdetails">
+                    <div class="aboutmyself">
+                        <h3>About</h3>
+                        <p>I’m a creative professional blending design and technology to craft intuitive, responsive,
+                            engaging digital experiences. Interested in UI/UX and front-end development, I aim to create
+                            meaningful solutions and contribute to impactful projects.</p>
                     </div>
-                    <div class="mainwork">
-                        <h3>Employee Management System</h3>
-                        <p>A intuitive employee management system that streamlines workforce operations enabling adding, listing, editing, and tracking employees and departments with elegance.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                            <button>Firebase</button>
+                    <div class="moreinfo">
+                        <h3>More info</h3>
+                        <p>Ashik Deen N</p>
+                        <p>📞+91 7299910666</p>
+                        <p>✉️ashikdeen141103@gmail.com</p>
+                        <p>📍Velachery, Chennai - 600042</p>
+                    </div>
+
+                    <div class="links">
+                        <h3>Quick links</h3>
+                        <a href="#about">
+                            <p>About</p>
+                        </a>
+                        <a href="#education">
+                            <p>Education</p>
+                        </a>
+                        <a href="#skills">
+                            <p>Skills</p>
+                        </a>
+                        <a href="#works">
+                            <p>Projects</p>
+                        </a>
+                    </div>
+                    <div class="contactmedirectly">
+                        <h3>Contact me</h3>
+                        <div class="one">
+                            <a href="mailto:ashikdeen141103@gmail.com" target="_blank"><img
+                                    src="./assets/logos/gmail.png" alt=""></a>
+                            <a href="mailto:ashikdeen141103@gmail.com" target="_blank">
+                                <p>Send an email</p>
+                            </a>
+                        </div>
+                        <div class="one">
+                            <a href="tel:+917299910666" target="_blank"><img src="./assets/logos/phone.png" alt=""></a>
+                            <a href="tel:+917299910666" target="_blank">
+                                <p>Call me on phone</p>
+                            </a>
+                        </div>
+                        <div class="one">
+                            <a href="sms:+917299910666" target="_blank"><img src="./assets/logos/textsms.png"
+                                    alt=""></a>
+                            <a href="sms:+917299910666" target="_blank">
+                                <p>Send me a message</p>
+                            </a>
+                        </div>
+                        <div class="one">
+                            <a href="https://wa.me/917299910666" target="_blank"><img src="./assets/logos/whatsapp.png"
+                                    alt=""></a>
+                            <a href="https://wa.me/917299910666" target="_blank">
+                                <p>Chat on WhatsApp</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="FinTrack.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://fin-track-nu-ten.vercel.app/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/FinTrack" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>FinTrack</h3>
-                        <p>A personal finance dashboard to track income, expenses, and spending patterns with role-based access control for admin and user.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                            <button>React</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Soapshop.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/soapshop/"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/soapshop" target="_blank"><button>Source Code</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>Soap Shop - Checkout System</h3>
-                        <p>Responsive soap product website with cart, total calculation, and QR-based checkout payment system integration feature.</p>
-                        <div class="buttons3">  
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>JavaScript</button>
-                            <button>Bootstrap</button>
-                        </div>
-                    </div>
-                </div> 
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Alphabanana.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://www.figma.com/design/PfyCFwjyqWT0adOJkoPlcm/Company-Tasks?node-id=200-78&t=4QSG2df50c2PXuos-1"><button>View Design</button></a>
-                        <a href="https://www.figma.com/proto/PfyCFwjyqWT0adOJkoPlcm/Company-Tasks?node-id=232-1709&p=f&t=ETCBqGK6IKmtk2eQ-1&scaling=contain&content-scaling=fixed&page-id=200%3A78&starting-point-node-id=232%3A1768" target="_blank"><button>Prototype</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>Alpha Banana</h3>
-                        <p>An alphabet-learning game for kids where challenges reward correct answers with bananas, motivating learning through animations, rewards, and a smiling monkey character.</p>
-                        <div class="buttons3">  
-                            <button>Figma</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="p3dLearning.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/p3d-learning-platform/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/p3d-learning-platform" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>P3D Technologies Learning Platform</h3>
-                        <p>Designed and developed a responsive website for a course-based company, enabling seamless learning access, intuitive navigation, and modern user experience.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Crash garage.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/crashgarage/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/crashgarage" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>Crash Garage – Vintage Motorcycle Showcase</h3>
-                        <p>A bold and sleek single-page site for a vintage motorcycle collection.Highlights include a custom hero section, smooth scroll navigation, and personal branding.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Dreamy bakes.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/dreamybakes/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/dreamybakes" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>Dreamy Bakes – Luxury Cake Shop Website</h3>
-                        <p>A visually rich multi-page website for a luxury cake shop, featuring smooth navigation, multiple product sections, and a delightful browsing experience.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="QRcodegenerator.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://texttoqrcodegenerator.onrender.com/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/texttoqrcodegenerator" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>QR Code Generator</h3>
-                        <p>Designed a sea-themed text-to-QR code generator enabling instant conversion with clean UI, smooth interactions, and responsive design.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>ExpressJS</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="LocateX.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/locateX/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/locateX" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>LocateX – Destination Finder & Route Planner</h3>
-                        <p>A smart destination search and routing app—LocateX—offering interactive mapping, search, directions, and location sharing with minimal, modern design.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                            <button>AJAX</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Funky calculator.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/funky-calculator/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/funky-calculator" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>Funky Calculator – Interactive UI Design</h3>
-                        <p>A bold, playful Funky Calculator with vibrant visuals, smooth interactions, and unique design, transforming ordinary calculations into an energetic, enjoyable experience.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Rock paper scissor.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/rock-paper-scissor/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/rock-paper-scissor" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>Rock Paper Scissors Game</h3>
-                        <p>A classic Rock Paper Scissors game where users compete against the computer, making choices each round, tracking scores, and enjoying an interactive gaming experience.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Guess number.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/guess-number/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/guess-number" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>Guess the Number Game</h3>
-                        <p>A simple, engaging JavaScript game where users guess a random number between 1–10, receiving feedback and five attempts to succeed.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Dice roll.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://craaazycrash.github.io/roll-dice/" target="_blank"><button>View Demo</button></a>
-                        <a href="https://github.com/craaazycrash/roll-dice" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>Roll the Dice Game</h3>
-                        <p>A competitive dice game where users roll against the computer, comparing outcomes each round, tracking scores, and enjoying a simple yet engaging interactive experience.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="gtgfragrance.png" alt="">
-                    <div class="buttons2">
-                        <a href= "https://craaazycrash.github.io/gtgfragranceperfumes/" target="_blank"><button>View Demo</button></a>
-                        <a href= "https://github.com/craaazycrash/gtgfragranceperfumes" target="_blank"><button>Source Code</button></a>
-                    </div>
-                    <div class="mainwork">
-                        <h3>GTG Perfumes</h3>
-                        <p>Designed a modern, nature-inspired landing page showcasing premium fragrances, highlighting product strength, natural ingredients, customer trust, and strong call-to-action for conversions.</p>
-                        <div class="buttons3">
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>Java Script</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Fashionapp.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://www.figma.com/design/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=0-1&t=LLujkK5jCg1PCsFF-1" target="_blank"><button>View Design</button></a>
-                        <a href="https://www.figma.com/proto/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=2096-6390&p=f&t=0FnPpTFKGuTsudcq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank"><button>Prototype</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>Fashion App Prototype</h3>
-                        <p>Designed a sleek mobile fashion app featuring modern UI, card design and user-friendly layouts to enhance online shopping and brand engagement experience.</p>
-                        <div class="buttons3">
-                            <button>Figma</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="JobYaari.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://www.figma.com/design/PDDRD6M83xPPVYXlv6L4jv/Job-yaari-Mobile-view-?node-id=0-1&t=FmQaPhYnyCNmFACC-1" target="_blank"><button>View Design</button></a>
-                        <a href="https://www.figma.com/proto/PDDRD6M83xPPVYXlv6L4jv/Job-yaari-Mobile-view-?node-id=13-42&p=f&t=3OBOdVpuVLRPt02P-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A3555" target="_blank"><button>Prototype</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>Job Yaari – Smart Job Discovery Mobile App</h3>
-                        <p>Designed a clean and intuitive mobile job search app with structured menus and user-friendly layouts to improve job discovery and navigation experience.</p>
-                        <div class="buttons3">
-                            <button>Figma</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="Agora.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://www.figma.com/design/PfyCFwjyqWT0adOJkoPlcm/Aevevo-Task?node-id=0-1&t=mEmhJdMlIdWnfeH4-1"><button>View Design</button></a>
-                        <a href="https://www.figma.com/proto/PfyCFwjyqWT0adOJkoPlcm/Aevevo-Task?node-id=76-106&t=9S9oNzXEpInC49Jm-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank"><button>Prototype</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>Agora.io (Redesigned UI/UX)</h3>
-                        <p>Redesigned Agora.io’s real-time engagement UI in Figma with refreshed layout, improved navigation, and clean components to elevate user experience for video, and messaging tools.</p>
-                        <div class="buttons3">  
-                            <button>Figma</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <img src="fitnut.png" alt="">
-                    <div class="buttons2">
-                        <a href="https://www.figma.com/design/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=193-578&t=LLujkK5jCg1PCsFF-1" target="_blank"><button>View Design</button></a>
-                        <a href="https://www.figma.com/proto/5FIFUDAmz956x0mDcIGXc8/Mobile-apps?node-id=2096-831&p=f&t=I9cmLrkuYUQTCVn6-1&scaling=scale-down&content-scaling=fixed&page-id=193%3A578" target="_blank"><button>Prototype</button></a>   
-                    </div>
-                    <div class="mainwork">
-                        <h3>FitNut - Fitness App Prototype</h3>
-                        <p>Designed a user-centered fitness app prototype focusing on intuitive navigation, personalized workouts, and progress tracking to enhance engagement and healthy lifestyle habits.</p>
-                        <div class="buttons3">  
-                            <button>Figma</button>
-                        </div>
-                    </div>
-                </div>          
-            </div>
-        </section>
-        <footer id="contact">
-            <div class="contactdetails">
-                <div class="aboutmyself">
-                    <h3>About</h3>
-                    <p>I’m a creative professional blending design and technology to craft intuitive, responsive, engaging digital experiences. Interested in UI/UX and front-end development, I aim to create meaningful solutions and contribute to impactful projects.</p>
-                </div>
-                <div class="moreinfo">
-                    <h3>More info</h3>
-                    <p>Ashik Deen N</p>
-                    <p>📞+91 7299910666</p>
-                    <p>✉️ashikdeen141103@gmail.com</p>
-                    <p>📍Velachery,  Chennai - 600042</p>
-                </div>
-                
-                <div class="links">
-                    <h3>Quick links</h3>
-                    <a href="#about"><p>About</p></a>
-                    <a href="#education"><p>Education</p></a>
-                    <a href="#skills"><p>Skills</p></a>
-                    <a href="#works"><p>Projects</p></a>
-                </div>
-                <div class="contactmedirectly">
-                    <h3>Contact me</h3>
-                    <div class="one">
-                        <a href="mailto:ashikdeen141103@gmail.com" target="_blank"><img src="gmail.png" alt=""></a>
-                        <a href="mailto:ashikdeen141103@gmail.com" target="_blank"><p>Send an email</p></a>
-                    </div>
-                     <div class="one">
-                        <a href="tel:+917299910666" target="_blank"><img src="phone.png" alt=""></a>
-                        <a href="tel:+917299910666" target="_blank"><p>Call me on phone</p></a>
-                    </div>
-                    <div class="one">
-                        <a href="sms:+917299910666" target="_blank"><img src="textsms.png" alt=""></a>
-                        <a href="sms:+917299910666" target="_blank"><p>Send me a message</p></a>
-                    </div>
-                    <div class="one">
-                        <a href="https://wa.me/917299910666" target="_blank"><img src="whatsapp.png" alt=""></a>
-                        <a href="https://wa.me/917299910666" target="_blank"><p>Chat on WhatsApp</p></a>
-                    </div>
-                </div>
-            </div>
                 <div class="underlineend">
                 </div>
                 <div class="copy">
-                    <p>COPYRIGHTS © ASHIKDEEN - All Rights Reserved 2025.</p>
+                    <p>COPYRIGHTS © ASHIKDEEN - All Rights Reserved 2026.</p>
                     <div class="logos">
-                        <a href="https://www.linkedin.com/in/ashikdeen/" target="_blank"><img src="linkedin.png" alt=""></a>
-                        <a href="https://github.com/craaazycrash" target="_blank"><img src="github.png" alt=""></a>
-                        <a href="https://ig.me/m/crazy___crash" target="_blank"><img src="instagram.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/ashikdeen/" target="_blank"><img
+                                src="./assets/logos/linkedin.png" alt=""></a>
+                        <a href="https://github.com/craaazycrash" target="_blank"><img src="./assets/logos/github.png"
+                                alt=""></a>
+                        <a href="https://ig.me/m/crazy___crash" target="_blank"><img src="./assets/logos/instagram.png"
+                                alt=""></a>
                     </div>
                 </div>
-        </footer>
-    </main>
-</div>
+            </footer>
+        </main>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="/js/script.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

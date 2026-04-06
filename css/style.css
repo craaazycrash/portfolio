@@ -1245,7 +1245,6 @@ footer {
 
   .work {
     width: 90%;
-    padding: 15px;
   }
 
   .work h3 {
@@ -1458,7 +1457,7 @@ footer {
   }
 
   .work {
-    width: 95%;
+    width: 100%;
   }
 
   .work p {
@@ -1467,7 +1466,7 @@ footer {
 
   .buttons2 {
     gap: 10px;
-    width: 100%;
+    width: 90%;
   }
 
   .buttons2 button {
